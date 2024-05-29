@@ -12,6 +12,7 @@ class RegisterNotifier extends StateNotifier<RegisterPageState> {
           formKey: GlobalKey<FormState>(),
         ));
 
+  @override
   void dispose() {
     state.userNameController.dispose();
     state.emailController.dispose();
