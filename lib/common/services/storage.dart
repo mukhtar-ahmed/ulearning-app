@@ -28,6 +28,10 @@ class StorageService {
     return token != null && token.isNotEmpty;
   }
 
+  String getUserAcessToken() {
+    return _pref.getString(Constant.USER_TOKEN) ?? '';
+  }
+
   String getString(String key) {
     return _pref.getString(key) ?? '';
   }
